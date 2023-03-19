@@ -77,3 +77,21 @@ public class Enemy : Character {
     }
   }
 }
+
+public class FreeSpace : Entity {
+  public FreeSpace(int x, int y) {
+    this.xcord = x;
+    this.ycord = y;
+    this.type = "freespace";
+    this.symbol = '.';
+  }
+}
+
+public class Wall : Entity {
+  public Wall(int x, int y) {
+    this.xcord = x;
+    this.ycord = y;
+    this.type = "wall";
+    this.symbol = '#';
+  }
+}
