@@ -46,11 +46,11 @@ public class Character : Entity {
   }
 
   public void moveTop() {
-    this.ycord += 1;
+    this.ycord -= 1;
   }
 
   public void moveBot() {
-    this.ycord -= 1;
+    this.ycord += 1;
   }
 }
 
@@ -68,6 +68,7 @@ public class Hero : Character {
 public class Enemy : Character {
 
   public Enemy(string type, int xcord, int ycord) {
+    this.type = "enemy";
     if (type == "Goblin") {
       this.health = 10;
       this.damage = 5;
