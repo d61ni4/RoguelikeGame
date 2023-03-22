@@ -26,6 +26,7 @@ public class Character : Entity {
   public int getHealth() {
     return this.health;
   }
+  
   public int getDamage() {
     return this.damage;
   }
@@ -52,7 +53,16 @@ public class Character : Entity {
   public void moveBot() {
     this.ycord += 1;
   }
+
+  public bool isAlive(){
+      
+      if(this.health > 0){ return true; }
+      else { return false; }
+
+    }
+  public void death(){}
 }
+
 
 public class Hero : Character {
   public Hero(int xcord, int ycord) { 
