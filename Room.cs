@@ -20,9 +20,9 @@ class Room {
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
                 if ((i == 0) || (j == 0) || (j == height-1) || (i == width-1)) {
-                    map[i, j] = new Wall(j, i);
+                    map[i, j] = new Wall();
                 } else {
-                    map[i, j] = new FreeSpace(j, i);
+                    map[i, j] = new FreeSpace();
                 }  
             }
         }

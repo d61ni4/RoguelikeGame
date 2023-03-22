@@ -4,7 +4,7 @@ class Program {
     public static void Main(string[] args) {
     Console.Clear();
     Hero hero = new Hero(1, 1);
-    List<Entity> entities = new List<Entity>(){hero};
+    List<Entity> entities = new List<Entity>(){hero, new Enemy("Goblin", 3, 3)};
     Room room1 = new Room(20, 10, entities);
     room1.drawRoom();
     ConsoleKeyInfo key;

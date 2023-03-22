@@ -80,19 +80,24 @@ public class Enemy : Character {
 }
 
 public class FreeSpace : Entity {
-  public FreeSpace(int x, int y) {
-    this.xcord = x;
-    this.ycord = y;
+  public FreeSpace() {
     this.type = "freespace";
     this.symbol = '.';
   }
 }
 
 public class Wall : Entity {
-  public Wall(int x, int y) {
-    this.xcord = x;
-    this.ycord = y;
+  public Wall() {
     this.type = "wall";
     this.symbol = '#';
+  }
+}
+
+public class Door : Entity {
+  public Door(int x, int y) {
+    this.type = "door";
+    this.symbol = '0';
+    this.xcord = x;
+    this.ycord = y;
   }
 }
