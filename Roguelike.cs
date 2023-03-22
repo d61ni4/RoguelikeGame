@@ -18,11 +18,11 @@ class Program {
             if (room1.getMap()[hero.getCoordinates()[0] + 1, hero.getCoordinates()[1]].getType() == "freespace") {
                 hero.moveRight();
             }
-        } else if (key.Key == ConsoleKey.UpArrow) {
+        } else if (key.Key == ConsoleKey.DownArrow) {
             if (room1.getMap()[hero.getCoordinates()[0], hero.getCoordinates()[1] - 1].getType() == "freespace") {
                 hero.moveTop();
             }
-        } else if (key.Key == ConsoleKey.DownArrow) {
+        } else if (key.Key == ConsoleKey.UpArrow) {
             if (room1.getMap()[hero.getCoordinates()[0], hero.getCoordinates()[1] + 1].getType() == "freespace") {
                 hero.moveBot();
             }
