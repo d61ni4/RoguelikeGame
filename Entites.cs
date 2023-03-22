@@ -29,12 +29,12 @@ public class Character : Entity {
   public int getDamage() {
     return this.damage;
   }
-  public void takeDamage(int damageAmount) {
-    this.health -= damageAmount;
+  public void takeDamage(int damage) {
+    this.health -= damage;
   }
 
-  public void dealDamage(Character enemy, int damageAmount) {
-    enemy.takeDamage(damageAmount);
+  public void dealDamage(Character enemy) {
+    enemy.takeDamage(this.damage);
   }
 
   public void moveRight() {
